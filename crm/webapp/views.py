@@ -38,3 +38,8 @@ def login(request):
 
     context = {"form": form}
     return render(request, "webapp/login.html", context=context)
+
+# - Logout a user
+def logout(request):
+    auth.logout(request)
+    return redirect("login")
