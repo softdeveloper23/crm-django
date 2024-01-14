@@ -5,4 +5,11 @@
 
 .message-text {
     color: black;
+    text-align: center;
+}
+
+.custom-close {
+    background: none;
+    border: none;
+    padding: 0;
 }
