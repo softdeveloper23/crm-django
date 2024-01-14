@@ -4,6 +4,7 @@ from .forms import CreateUserForm, LoginForm
 from django.contrib.auth.models import auth
 from django.contrib.auth import authenticate
 from django.contrib.auth.decorators import login_required
+from .models import Record
 
 # - Homepage
 def home(request):
@@ -43,8 +44,10 @@ def login(request):
 # - Dashboard
 @login_required(login_url="login")
 def dashboard(request):
+    records = Record.objects.all()
+    context = {"records": records}
 
-    return render(request, "webapp/dashboard.html")
+    return render(request, "webapp/dashboard.html", context=context)
 
 # - Logout a user
 def logout(request):
