@@ -4,16 +4,14 @@
 
     <div class="card">
         <div class="card-header">
-            <h3>View Record</h3>
+            &nbsp; &nbsp;
+            <strong>
+                {{ record.last_name|upper }}
+                {{ record.first_name }}
+            </strong>
         </div>
 
-        <strong>
-            {{ record.last_name|upper }}
-            {{ record.first_name }}
-        </strong>
-
         <div class="card-body">
-            <hr>
             <br>
             <p> <strong> ID: </strong>{{ record.id }}</p>
             <p> <strong> Email: </strong>{{ record.email_address }}</p>
@@ -27,5 +25,19 @@
             <br>
         </div>
     </div>
+
+    <br>
+
+    <a class="btn btn-secondary btn-sm" href="{% url 'dashboard' %}">
+        Back To Dashboard
+    </a>
+    &nbsp;
+    <a class="btn btn-info btn-sm" href="{% url 'update-record' record.id %}">
+        Update Record
+    </a>
+    &nbsp;
+    <a class="btn btn-danger btn-sm" href="{% url '' %}">
+        Delete Record
+    </a>
 
 {% endblock %}
