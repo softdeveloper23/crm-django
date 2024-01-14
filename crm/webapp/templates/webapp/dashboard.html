@@ -47,6 +47,8 @@
                     <td>{{ record.country }}</td>
 
                     <td>{{ record.creation_date }}</td>
+
+                    <td><a href="{% url 'record' record.id %}">View Record</a></td>
                 </tr>
                 {% endfor %}
             {% endif %}

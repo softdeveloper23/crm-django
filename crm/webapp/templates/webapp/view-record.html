@@ -1,0 +1,31 @@
+{% extends "webapp/base.html" %}
+
+{% block content %}
+
+    <div class="card">
+        <div class="card-header">
+            <h3>View Record</h3>
+        </div>
+
+        <strong>
+            {{ record.last_name|upper }}
+            {{ record.first_name }}
+        </strong>
+
+        <div class="card-body">
+            <hr>
+            <br>
+            <p> <strong> ID: </strong>{{ record.id }}</p>
+            <p> <strong> Email: </strong>{{ record.email_address }}</p>
+            <p> <strong> Phone Number: </strong>{{ record.phone_number }}</p>
+            <p> <strong> Street: </strong>{{ record.address }}</p>
+            <p> <strong> City: </strong>{{ record.city }}</p>
+            <p> <strong> Province: </strong>{{ record.province }}</p>
+            <p> <strong> Postal Code: </strong>{{ record.postal_code }}</p>
+            <p> <strong> Country: </strong>{{ record.country }}</p>
+            <p> <strong> Date Created: </strong>{{ record.creation_date }}</p>
+            <br>
+        </div>
+    </div>
+
+{% endblock %}
