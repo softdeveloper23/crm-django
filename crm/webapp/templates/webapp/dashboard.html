@@ -6,9 +6,7 @@
 
     <hr>
 
-    <a class="btn btn-primary btn-sm" href="{% url 'create-record' %}">
-        Create A New Record
-    </a>
+    <a class="btn btn-primary btn-sm" href="{% url 'create-record' %}">New Record &nbsp; <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
 
     <hr>
 
@@ -48,7 +46,7 @@
 
                     <td>{{ record.creation_date }}</td>
 
-                    <td><a href="{% url 'record' record.id %}">View Record</a></td>
+                    <td><a class="btn btn-success btn-sm" href="{% url 'record' record.id %}"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
                 </tr>
                 {% endfor %}
             {% endif %}
