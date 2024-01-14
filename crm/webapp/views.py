@@ -86,6 +86,14 @@ def singular_record(request, pk):
     context = {"record": all_records}
     return render(request, "webapp/view-record.html", context=context)
 
+# - Delete a record
+@login_required(login_url="login")
+def delete_record(request, pk):
+    record = Record.objects.get(id=pk)
+    record.delete()
+
+    return redirect("dashboard")
+
 # - Logout a user
 def logout(request):
     auth.logout(request)
