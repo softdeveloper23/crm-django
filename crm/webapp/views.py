@@ -62,6 +62,8 @@ def create_record(request):
             form.save()
             messages.success(request, "Record was created successfully!")
             return redirect("dashboard")
+        else:
+            print(form.errors)
 
     context = {"form": form}
     return render(request, "webapp/create-record.html", context=context)
@@ -78,6 +80,8 @@ def update_record(request, pk):
             form.save()
             messages.success(request, "Record was updated successfully!")
             return redirect("dashboard")
+        else:
+            print(form.errors)
 
     context = {"form": form}
     return render(request, "webapp/update-record.html", context=context)
