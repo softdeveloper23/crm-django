@@ -2,16 +2,55 @@
 
 {% block content %}
 
-    <h3>Welcome to the dashboard page, {{ user }}!</h3>
+    <h5>Welcome to the dashboard page, {{ user }}!</h5>
 
-    {% for record in records %}
+    <hr>
 
-        {{ record.id }}
+    <a class="btn btn-primary btn-sm" href="{% url 'dashboard' %}">
+        Create New Record
+    </a>
 
-        {{ record.first_name }}
+    <hr>
 
-        {{ record.last_name }}
+    <table class="table table-light table-hover table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Street</th>
+                <th scope="col">City</th>
+                <th scope="col">Province</th>
+                <th scope="col">Zip Code</th>
+                <th scope="col">Country</th>
 
-    {% endfor %}
+                <th scope="col">Date Created</th>
+
+                <th scope="col">View</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if records %}
+                {% for record in records %}
+                <tr>
+                    <th scope="row">{{ record.id }}</th>
+                    <td>{{ record.first_name }}</td>
+                    <td>{{ record.last_name }}</td>
+                    <td>{{ record.email_address }}</td>
+                    <td>{{ record.phone_number }}</td>
+                    <td>{{ record.address }}</td>
+                    <td>{{ record.city }}</td>
+                    <td>{{ record.province }}</td>
+                    <td>{{ record.postal_code }}</td>
+                    <td>{{ record.country }}</td>
+
+                    <td>{{ record.creation_date }}</td>
+                </tr>
+                {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
 
 {% endblock %}
