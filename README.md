@@ -1,22 +1,42 @@
-# CRM Django Project
+# My Django Project
 
-Welcome to my Django Customer Records Management file which demonstrates CRUD.
-
-Please ensure that you create your own virtual environment and install all the necessary packages via the requirements.txt file.
+This is a brief description of my Django project, detailing its functionality and purpose.
 
 ## Installation
 
-1. Create a virtual environment:
-   - On Unix/Linux/macOS: `python3 -m venv env`
-   - On Windows: `py -m venv env`
+Follow these steps to set up your environment and get the project running.
 
-2. Activate the virtual environment:
-   - On Unix/Linux/macOS: `source env/bin/activate`
-   - On Windows: `.\env\Scripts\activate`
+### Setting up a virtual environment
 
-3. Install the necessary dependencies: `pip install -r requirements.txt`
+Create a virtual environment to manage your project's dependencies separately from your system's Python installation.
 
-## Usage
+- For Unix/Linux/macOS:
+  ```bash
+  python3 -m venv env
 
-Go to the main crm directory where manage.py is stored and run the project with the command: `python manage.py runserver`
+  For Windows:
+bash
+py -m venv env
+
+Activating the virtual environment
+Activate the virtual environment to use it for installing dependencies and running the project.
+On Unix/Linux/macOS:
+bash
+source env/bin/activate
+
+On Windows:
+cmd
+.\env\Scripts\activate
+
+Installing dependencies
+Install the required dependencies listed in the requirements.txt file.
+bash
+pip install -r requirements.txt
+
+Usage
+To run the Django project locally, execute the following command:
+bash
+python manage.py runserver
+
+This will start the development server, allowing you to access the project in your web browser at http://127.0.0.1:8000/.
 
