@@ -1,6 +1,6 @@
-# My Django Project
+# Welcome to my Django Customer Records Management file which demonstrates CRUD.
 
-This is a brief description of my Django project, detailing its functionality and purpose.
+Please ensure that you create your own virtual environment and install all the necessary packages via the requirements.txt file.
 
 ## Installation
 
@@ -15,7 +15,7 @@ Create a virtual environment to manage your project's dependencies separately fr
   python3 -m venv env
 
   For Windows:
-bash
+cmd
 py -m venv env
 
 Activating the virtual environment
