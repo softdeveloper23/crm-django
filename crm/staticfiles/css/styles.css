@@ -1,0 +1,15 @@
+.form-layout {
+    border-radius: 15px;
+    width: 500px; /* In the future, change to vw for responsive design. */
+}
+
+.message-text {
+    color: black;
+    text-align: center;
+}
+
+.custom-close {
+    background: none;
+    border: none;
+    padding: 0;
+}
