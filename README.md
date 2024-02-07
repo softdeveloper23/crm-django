@@ -10,9 +10,9 @@
 
 ![Project screenshot](project-images/crm4.png)
 
-Please ensure that you create your own virtual environment and install all the necessary packages via the requirements.txt file.
-
 ## Installation
+
+Please ensure that you create your own virtual environment and install all the necessary packages via the requirements.txt file.
 
 1. Create a virtual environment:
    - On Unix/Linux/macOS: `python3 -m venv env`
