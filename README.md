@@ -1,12 +1,12 @@
 # Welcome to my Django Customer Records Management project which demonstrates CRUD.
 
-![Project screenshot](project-images/crm1)
+![Project screenshot](project-images/crm1.png)
 
-![Project screenshot](project-images/crm2)
+![Project screenshot](project-images/crm2.png)
 
-![Project screenshot](project-images/crm3)
+![Project screenshot](project-images/crm3.png)
 
-![Project screenshot](project-images/crm4)
+![Project screenshot](project-images/crm4.png)
 
 Please ensure that you create your own virtual environment and install all the necessary packages via the requirements.txt file.
 
