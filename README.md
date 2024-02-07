@@ -1,5 +1,7 @@
 # Welcome to my Django Customer Records Management project which demonstrates CRUD.
 
+# Project Images
+
 ![Project screenshot](project-images/crm1.png)
 
 ![Project screenshot](project-images/crm2.png)
